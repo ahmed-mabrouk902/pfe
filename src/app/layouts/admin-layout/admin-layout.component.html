@@ -1,0 +1,19 @@
+
+    <div class="wrapper" data-color="black" data-active-color="danger">
+        <div class="sidebar" data-color="white" data-active-color="danger">
+            <sidebar-cmp></sidebar-cmp>
+        </div>
+        <div class="main-panel" style="min-height: 100vh;" >
+            <navbar-cmp></navbar-cmp>
+            <div class="content" >
+                <router-outlet></router-outlet>
+            </div>
+            <div *ngIf="test"><app-graph-visualization></app-graph-visualization></div>
+            
+        </div>
+
+    </div>
+
+
+<fixedplugin-cmp></fixedplugin-cmp>
+
